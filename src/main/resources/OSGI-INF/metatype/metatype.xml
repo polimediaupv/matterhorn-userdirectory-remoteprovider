@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0">
+
+  <OCD description="RemoteRolesProvider" name="org.opencastproject.userdirectory.remoteroles" id="org.opencastproject.userdirectory.remoteroles">
+
+    <AD name="Organization ID" id="org.opencastproject.userdirectory.remoteroles.org" required="true" type="String" default="mh_default_org" />
+    
+    <AD name="Cache size" id="org.opencastproject.userdirectory.remoteroles.cache.size" required="false" type="Integer" default="1000" />
+    <AD name="Cache expiration (minutes)" id="org.opencastproject.userdirectory.remoteroles.cache.expiration" required="false" type="Integer" default="5" />
+
+    <AD name="Remote server URL" id="org.opencastproject.userdirectory.remoteroles.server.url" required="true" type="String" />
+    <AD name="Remote server auth method" id="org.opencastproject.userdirectory.remoteroles.server.auth.method" required="false" type="String" />
+    <AD name="Remote server username" id="org.opencastproject.userdirectory.remoteroles.server.username" required="false" type="String" default="" />
+    <AD name="Remote server password" id="org.opencastproject.userdirectory.remoteroles.server.password" required="false" type="String" default="" />
+    
+    
+  </OCD>
+
+  <Designate pid="org.opencastproject.userdirectory.remoteroles">
+    <Object ocdref="org.opencastproject.userdirectory.remoteroles" />
+  </Designate>
+
+</metatype:MetaData>
