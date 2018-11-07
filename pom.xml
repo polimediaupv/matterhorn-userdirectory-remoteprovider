@@ -6,17 +6,17 @@
   <parent>
     <groupId>org.opencastproject</groupId>
     <artifactId>base</artifactId>
-    <version>3.2</version>
-    <relativePath>../../opencast/pom.xml</relativePath>
+    <version>6-SNAPSHOT</version>
+    <relativePath>../opencast/pom.xml</relativePath>
   </parent>
   <properties>
-    <matterhorn.basedir>${project.basedir}/../..</matterhorn.basedir>
+    <opencast.basedir>${project.basedir}/../opencast</opencast.basedir>
     <checkstyle.skip>true</checkstyle.skip>
   </properties>
   <dependencies>
     <dependency>
       <groupId>org.opencastproject</groupId>
-      <artifactId>matterhorn-common</artifactId>
+      <artifactId>opencast-common</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
